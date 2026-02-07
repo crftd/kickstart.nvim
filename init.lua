@@ -182,6 +182,9 @@ vim.o.confirm = true
 vim.keymap.set('n', '<leader>e', ':Neotree filesystem toggle left<CR>')
 vim.keymap.set('n', '<leader>o', ':Neotree filesystem reveal left<CR>')
 
+-- Open diagnostics
+vim.keymap.set('n', '<leader>gl', function() vim.diagnostic.open_float() end, { desc = 'Open Diagnostics in float' })
+
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
