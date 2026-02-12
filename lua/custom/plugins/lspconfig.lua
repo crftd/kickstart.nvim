@@ -146,6 +146,8 @@ return {
       'prettierd',
       'prettier',
       'rust-analyzer',
+      'basedpyright',
+      'ruff',
       -- You can add other tools here that you want Mason to install
     })
 
@@ -183,5 +185,7 @@ return {
       },
     })
     vim.lsp.enable 'lua_ls'
+    vim.lsp.enable 'basedpyright'
+    vim.lsp.enable 'ruff'
   end,
 }
