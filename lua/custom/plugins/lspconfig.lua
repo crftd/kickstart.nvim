@@ -163,7 +163,6 @@ return {
       'stylua', -- Used to format Lua code
       'prettierd',
       'prettier',
-      'rust-analyzer',
       'basedpyright',
       'ruff',
       -- You can add other tools here that you want Mason to install
