@@ -123,14 +123,16 @@ return {
       -- clangd = {},
       -- gopls = {},
       -- pyright = {},
-      rust_analyzer = {},
+      -- rust_analyzer = {},
       basedpyright = {},
+      svelte = {},
       eslint = {
         filetypes = {
           'javascript',
           'javascriptreact',
           'typescript',
           'typescriptreact',
+          'svelte',
         },
         settings = {
           validate = {
@@ -138,6 +140,7 @@ return {
             'javascriptreact',
             'typescript',
             'typescriptreact',
+            'svelte',
           },
           useFlatConfig = true,
         },
@@ -165,6 +168,8 @@ return {
       'prettier',
       'basedpyright',
       'ruff',
+      'svelte-language-server',
+      'rust-analyzer',
       -- You can add other tools here that you want Mason to install
     })
 
